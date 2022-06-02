@@ -7,6 +7,9 @@ body{
 }
 
 /*------------------Header-----------*/
+
+
+
 .iconoTelefono{
     width: 32px;
     height: 32px;
@@ -21,6 +24,10 @@ body{
 
 header nav{
     background-color: #8E44AD;
+}
+
+.navCentro{
+    padding: 0px 60px;
 }
 
 .nav-link{
@@ -39,7 +46,8 @@ header nav{
     color: #c393d8;
 }
 .logoHeader{
-    width: 128px;
+    width: 120px;
+    height:64px;
 }
 
 
@@ -62,6 +70,17 @@ header nav{
     padding-left: 20px;
 }
 
+.animacionInformacionIndex{
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+
+}
+
+@keyframes parrafoEntraIzq {
+    from { transform: translate(1000px,  0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
 .informacionIndex{
     font-family: 'Work Sans', sans-serif;
     font-size: 13px;
@@ -74,7 +93,6 @@ header nav{
     background-color: #8E44AD;
     color: white;
 }
-
 
 /*---------------------Footer----------------*/
 .fondoFooter{
@@ -124,6 +142,29 @@ footer div div div p {
 }
 
 /*-----------Servicios------------*/
+
+.animacionServicioDerecha{
+    animation-duration: 0.4s;
+    animation-name: parrafoEntraIzq;
+
+}
+
+@keyframes parrafoEntraIzq {
+    from { transform: translate(1000px,  0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
+.animacionServicioIzquierda{
+    animation-duration: 0.4s;
+    animation-name: anmiServicio;
+
+}
+
+@keyframes anmiServicio {
+    from { transform: translate(-1000px,  0); }
+    to   { transform: translate(-0px, 0); }    
+}
+
 .servicios{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -135,23 +176,27 @@ footer div div div p {
 }
 .accordion-button:not(.collapsed){ /*Abierto*/
     background-color: rgb(253, 159, 253);
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: underline;
 }
 
+.letraServicioAcordeon{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+}
 
 .imagenInformacionPeluqueria{
     height: 40vh;
 }
 
-.letraServicioPeluqueria{
-    font-size: 17px;
+.divServicioTexto{
+    font-size: 15px;
     font-family: 'Work Sans', sans-serif;
 }
-
 .divServicioTexto ul {
     list-style-position: inside;
 }
+
 .divServicioTexto ul li::marker{
     color:rgb(192, 76, 167);
     font-size: 10px
@@ -188,6 +233,17 @@ footer div div div p {
     color: rgb(192, 76, 167);
 }
 
+.animacionTitulo{
+    animation-duration: 0.4s;
+    animation-name: animTitulo;
+
+}
+
+@keyframes animTitulo {
+    from { font-size: 2px; }
+    to   { font-size: 40px; }    
+}
+
 .btnColor{
     --bs-btn-bg: rgb(192, 76, 167);
     --bs-btn-border-color: rgb(192, 76, 167);
@@ -195,7 +251,22 @@ footer div div div p {
     --bs-btn-hover-border-color: rgb(150, 71, 167);
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 768px){ /*Tablet Vertical*/
+
+    /*Todas las paginas*/
+    .whatsapp{
+        display: none;
+    }
+
+    /*header*/
+    .navCentro{
+        padding: 0px 15px;
+    }
+
+    /*index*/
+    .imagenInformacion{
+        height: 28vh;
+    }
 
     /*Servicios*/
     .imagenInformacionPeluqueria{
