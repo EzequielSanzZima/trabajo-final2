@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;1,100&display=swap');
+
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------------------Header-----------*/
+.iconoTelefono{
+    width: 32px;
+    height: 32px;
+}
+
+.topHeader{
+    background-color: #7D3C98;
+}
+
+
+
+
+header nav{
+    background-color: #8E44AD;
+}
+
+.nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link.active{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+.nav-link:hover{
+    color: #BB8FCE;
+}
+
+.navbar-nav .nav-link.active{
+    color: #c393d8;
+}
+.logoHeader{
+    width: 128px;
+}
+
+
+/*--------------Main Index-------------------*/
+
+
+.whatsapp{
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+}
+
+.imagenInformacion{
+    padding: 2px;
+}
+
+.divTextoIntroduccion{
+    padding-left: 20px;
+}
+
+.informacionIndex{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+}
+.textoIntroduccion{
+    color: #734885;
+}
+
+.card-body{
+    background-color: #8E44AD;
+    color: white;
+}
+
+
+/*---------------------Footer----------------*/
+.fondoFooter{
+    padding-top: 10px;
+    background-color: #8E44AD;
+}
+.navFooter{   /*Copia nav-Link en footer para modificar*/
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+    color:white;
+    padding: 0;
+    margin: 0%;
+    
+}
+
+.navFooter a:hover {
+    color:#BB8FCE;
+}
+
+footer div div div p {
+    color: white;
+}
+
+.logoFooter{
+    width: 128px;
+}
+
+.footerFinal{
+    background-color: #7D3C98;
+    color: white;   
+}
+
+/*------------Contacto----------*/
+
+.bodyCardContacto{
+    background-color: #A569BD  ;
+}
+
+.contactoTexto{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*-----------Servicios------------*/
+.servicios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(192, 76, 167);
+}
+.accordion-button{ /*Letras Sin abrir*/
+    color: rgb(184, 44, 153);
+}
+.accordion-button:not(.collapsed){ /*Abierto*/
+    background-color: rgb(253, 159, 253);
+    color: black;
+    text-decoration: underline;
+}
+
+
+.imagenInformacionPeluqueria{
+    height: 40vh;
+}
+
+.letraServicioPeluqueria{
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.divServicioTexto ul {
+    list-style-position: inside;
+}
+.divServicioTexto ul li::marker{
+    color:rgb(192, 76, 167);
+    font-size: 10px
+}
+
+
+/*----------------------Quien Somos---------------*/
+.letraQuienSomosTexto{
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*----------------------Galeria-------------------*/
+.galeriaContainer img{
+    width: 100%;
+    height: 350px;
+}
+
+.galeriaContainer img:hover{
+    border:5px solid #f7f7f7;
+}
+
+.galeriaContainer .col-lg-4{
+    margin: 0px;
+    padding: 25px;
+}
+
+
+
+.titulo{
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(192, 76, 167);
+}
+
+.btnColor{
+    --bs-btn-bg: rgb(192, 76, 167);
+    --bs-btn-border-color: rgb(192, 76, 167);
+    --bs-btn-hover-bg: rgb(150, 71, 167);
+    --bs-btn-hover-border-color: rgb(150, 71, 167);
+}
+
+@media only screen and (max-width: 480px){
+
+    /*Servicios*/
+    .imagenInformacionPeluqueria{
+        height: 330px;
+    }
+    .divServicioTexto{
+        padding: 15px 48px 5px 48px!important;
+    }
+
+}
