@@ -143,7 +143,7 @@ footer div div div p {
 
 /*-----------Servicios------------*/
 
-.animacionServicioDerecha{
+.animacionServicioDerecha{     /*Acordeon*/
     animation-duration: 0.4s;
     animation-name: parrafoEntraIzq;
 
@@ -154,7 +154,7 @@ footer div div div p {
     to   { transform: translate(-0px, 0); }    
 }
 
-.animacionServicioIzquierda{
+.animacionServicioIzquierda{ /*Servicio peluqueria*/
     animation-duration: 0.4s;
     animation-name: anmiServicio;
 
@@ -226,6 +226,17 @@ footer div div div p {
 
 
 
+
+
+
+/*Todas las paginas*/
+.btnColor{
+    --bs-btn-bg: rgb(192, 76, 167);
+    --bs-btn-border-color: rgb(192, 76, 167);
+    --bs-btn-hover-bg: rgb(150, 71, 167);
+    --bs-btn-hover-border-color: rgb(150, 71, 167);
+}
+
 .titulo{
     text-align: center;
     padding-top: 10px;
@@ -236,19 +247,10 @@ footer div div div p {
 .animacionTitulo{
     animation-duration: 0.4s;
     animation-name: animTitulo;
-
 }
-
 @keyframes animTitulo {
-    from { font-size: 2px; }
+    from { font-size: 0px; }
     to   { font-size: 40px; }    
-}
-
-.btnColor{
-    --bs-btn-bg: rgb(192, 76, 167);
-    --bs-btn-border-color: rgb(192, 76, 167);
-    --bs-btn-hover-bg: rgb(150, 71, 167);
-    --bs-btn-hover-border-color: rgb(150, 71, 167);
 }
 
 @media only screen and (max-width: 768px){ /*Tablet Vertical*/
